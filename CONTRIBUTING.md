@@ -42,6 +42,5 @@ Check out the [guidelines for commit messages](https://gist.github.com/robertpai
 
 * All releases follow the [semantic versioning scheme](https://semver.org/)
 * The `main` branch should contain only tested, reviewed and released code
-* `staging` branch should contain code that is compiled and run on the Circles staging servers
 * Release additions, updates, fixes and breaking changes are always documented in `CHANGELOG.md` following this [scheme](https://keepachangelog.com)
 * Release commits are tagged via git and additionally maintained as GitHub releases
