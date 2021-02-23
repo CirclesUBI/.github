@@ -1,5 +1,47 @@
 # Contributing to Circles
 
+## :goat: Welcome!
+
+**We are very excited to hear that you take your time to help building the Circles UBI project used by users and groups all around the world!** :star: If you have an idea, suggestion or bugfix to improve Circles, please read these guidelines carefully and reach out for help in our channels when you have any questions.
+
+## :monkey: Code of Conduct
+
+> **Note:** Circles is a community project maintained by volunteers and people dedicated to it in various organizational forms. While we are working hard to improve the infrastructure, stability and code, **please be respectful with the current contributors around this project** which dedicate their limited time to make all of this work. :heart:
+
+To create a safe environment for all contributors and members, Circles is governed by the [Circles Code of Conduct](TODO). By participating, you are expected to uphold this code. Please report unacceptable behavior to <TODO>.
+  
+## :tropical_fish: Join us, ask for help
+
+We have an **official board and chat** where the community helps you if you have questions:
+
+* [Official Circles chat @ RocketChat](https://chat.joincircles.net)
+* [Official discussion forum for Circles @ Discourse](https://aboutcircles.com)
+
+## :cow: Overview
+
+If you are new to the Circles project or need an overview of all components of the system or development guidelines, **we recommend you to read th following documents:**
+
+* The official [Circles Handbook](https://handbook.joincircles.net/) gives you an **introduction into the Circles system architecture**, how to deploy your own Circles server but also how to write and run Circles code on your machine.
+* The [Circles Whitepaper](https://handbook.joincircles.net/about/whitepaper.html) will give you a **good technical overview of how Circles actually works**.
+* Check out the [FAQ](https://joincircles.net/faq) on the Circles website.
+
+## :panda_face: How Can I Contribute?
+
+### Reporting Bugs
+
+This section guides you through submitting a bug report for Circles. Following these guidelines helps maintainers and the community understand your report :pencil:, reproduce the behavior :computer:, and find related reports :mag_right:.
+
+Before creating bug reports, please check if the problem has already been mentioned in the regarding issues of the regarding GitHub repository. When you are creating a bug report, please include as many details as possible. Fill out [the required template](https://github.com/CirclesUBI/.github/blob/master/.github/ISSUE_TEMPLATE/bug_report.md), the information it asks for helps us resolve issues faster.
+
+> **Note:** If you find a **Closed** issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one.
+
+### Your First Code Contribution
+
+Unsure where to begin contributing to Circles? You can start by looking through these `good-first-issue` or `help-wanted` issues:
+
+* [`good-first-issue`] - issues which should only require a few lines of code, and a test or two.
+* [`help-wanted`] - issues which should be a bit more involved than `good-first-issue` issues.
+
 ## :sloth: Styleguide
 
 ### Code
@@ -44,3 +86,6 @@ Check out the [guidelines for commit messages](https://gist.github.com/robertpai
 * The `main` branch should contain only tested, reviewed and released code
 * Release additions, updates, fixes and breaking changes are always documented in `CHANGELOG.md` following this [scheme](https://keepachangelog.com)
 * Release commits are tagged via git and additionally maintained as GitHub releases
+
+[`good-first-issue`]: https://github.com/search?l=&q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue+%3Aheart%3A%22+user%3ACirclesUBI+sort%3Acomments-desc&type=issues
+[`help-wanted`]: https://github.com/search?l=&q=is%3Aopen+is%3Aissue+label%3A%22help+wanted+%3Aheart%3A%22+user%3ACirclesUBI+sort%3Acomments-desc&type=issues
