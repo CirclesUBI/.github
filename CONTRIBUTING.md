@@ -14,18 +14,34 @@ To create a safe environment for all contributors and members, Circles is govern
 
 We have an **official board and chat** where the community helps you if you have questions:
 
-* [Official Circles chat @ RocketChat](https://chat.joincircles.net)
-* [Official discussion forum for Circles @ Discourse](https://aboutcircles.com)
+:arrow_right: [Official Circles chat @ RocketChat](https://chat.joincircles.net)
+
+* Say hi and tell the others about yourself in our `#general` channel
+* Check out the `#development` channel for technical questions
+
+:arrow_right: [Official discussion forum for Circles @ Discourse](https://aboutcircles.com)
 
 ## :cow: Overview
 
-If you are new to the Circles project or need an overview of all components of the system or development guidelines, **we recommend you to read th following documents:**
+If you are new to the Circles project and you need an overview of all components of the system and some development guidelines, **we recommend you to check out the following documents:**
 
-* The official [Circles Handbook](https://handbook.joincircles.net/) gives you an **introduction into the Circles system architecture**, how to deploy your own Circles server but also how to write and run Circles code on your machine.
-* The [Circles Whitepaper](https://handbook.joincircles.net/about/whitepaper.html) will give you a **good technical overview of how Circles actually works**.
+* The official [Circles Handbook](https://handbook.joincircles.net/) gives you an **introduction into the Circles system architecture**, tutorials in deploy your own Circles server but also how to write and run Circles code running locally on your computer.
+* The [Circles Whitepaper](https://handbook.joincircles.net/about/whitepaper.html) will give you a **good overview of how Circles actually works**.
 * Check out the [FAQ](https://joincircles.net/faq) on the Circles website.
 
 ## :panda_face: How Can I Contribute?
+
+Any sort of contribution is welcome! Here are some examples:
+
+* Report a bug you identified
+* Write code which enhances the system or fixes an issue
+* Add a tutorial to the [`Circles Handbook`]
+* Improve the documentation or installation steps for a service
+* Translate the [`Circles Wallet`] or [`Website`] in another language
+
+[`Circles Handbook`]: https://github.com/CirclesUBI/circles-handbook
+[`Circles Wallet`]: https://github.com/CirclesUBI/circles-myxogastria/tree/main/locales
+[`Website`]: https://github.com/CirclesUBI/circles-website/tree/master/public/static/locales
 
 ### Reporting Bugs
 
