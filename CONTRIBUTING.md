@@ -2,13 +2,13 @@
 
 ## :goat: Welcome!
 
-**We are very excited to hear that you take your time to help building the Circles UBI project used by users and groups all around the world!** :star: If you have an idea, suggestion or bugfix to improve Circles, please read these guidelines carefully and reach out for help in our channels when you have any questions.
+We are very excited to hear that you take your time to help building the Circles UBI project used by users and groups all around the world! :star: If you have an idea, suggestion or bugfix to improve Circles, please read these guidelines carefully and reach out for help in our channels when you have any questions.
 
 ## :monkey: Code of Conduct
 
-> **Note:** Circles is a community project maintained by volunteers and people dedicated to it in various organizational forms. While we are working hard to improve the infrastructure, stability and code, **please be respectful with the current contributors around this project** which dedicate their limited time to make all of this work. :heart:
+> **Note:** Circles is a community project maintained by volunteers and people dedicated to it in various organizational forms. While we are working hard to improve the infrastructure, stability and code, please be respectful with the current contributors around this project which dedicate their limited time to make all of this work. :heart:
 
-To create a safe environment for all contributors and members, Circles is governed by the [Circles Code of Conduct](TODO). By participating, you are expected to uphold this code. Please report unacceptable behavior to <TODO>.
+To create a safe environment for all contributors and members, Circles is governed by the [Circles Code of Conduct](https://github.com/CirclesUBI/.github/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please [report](https://github.com/CirclesUBI/.github/blob/main/CODE_OF_CONDUCT.md#reporting) unacceptable behavior to counsellor@bitspossessed.org.
   
 ## :tropical_fish: Join us, ask for help
 
