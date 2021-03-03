@@ -4,6 +4,8 @@ As contributors and maintainers of the Circles project we are committed to provi
 
 ## Expected behaviour
 
+Circles is a community project maintained by volunteers and people dedicated to it in various organizational forms. While we are working hard to improve the infrastructure, stability and code, please be respectful with the contributors around this project which dedicate their limited time to make all of this work.
+
 We expect contributors, moderators, members and organizers of the Circles project to remain mindful of, and take responsibility for, their speech and behavior. This includes:
 
 * Acting out of respect for others.
