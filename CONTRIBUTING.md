@@ -25,9 +25,9 @@ We have an **official board and chat** where the community helps you if you have
 
 If you are new to the Circles project and you need an overview of all components of the system and some development guidelines, **we recommend you to check out the following documents:**
 
-* The official [Circles Handbook](https://handbook.joincircles.net/) gives you an **introduction into the Circles system architecture**, tutorials in deploy your own Circles server but also how to write and run Circles code running locally on your computer.
-* The [Circles Whitepaper](https://handbook.joincircles.net/about/whitepaper.html) will give you a **good overview of how Circles actually works**.
-* Check out the [FAQ](https://joincircles.net/faq) on the Circles website.
+* The official [Circles Handbook](https://handbook.joincircles.net/) gives you an **introduction into the Circles system architecture**, tutorials to deploy your own Circles server but also how to write and run Circles code locally on your computer
+* The [Circles Whitepaper](https://handbook.joincircles.net/about/whitepaper.html) will give you a **good overview of how Circles actually works**
+* Check out the [FAQ](https://joincircles.net/faq) on the Circles website
 
 ## :panda_face: How Can I Contribute?
 
@@ -47,16 +47,22 @@ Any sort of contribution is welcome! Here are some examples:
 
 This section guides you through submitting a bug report for Circles. Following these guidelines helps maintainers and the community understand your report :pencil:, reproduce the behavior :computer:, and find related reports :mag_right:.
 
-Before creating bug reports, please check if the problem has already been mentioned in the regarding issues of the regarding GitHub repository. When you are creating a bug report, please include as many details as possible. Fill out [the required template](https://github.com/CirclesUBI/.github/blob/master/.github/ISSUE_TEMPLATE/bug_report.md), the information it asks for helps us resolve issues faster.
+Before creating bug reports, please check if the problem has already been mentioned in the regarding issues of the regarding GitHub repository. When you are creating a bug report, please include as many details as possible. Fill out the required [bug report template](https://github.com/CirclesUBI/.github/blob/master/.github/ISSUE_TEMPLATE/bug-report.md), the information it asks for helps us resolve issues faster.
 
 > **Note:** If you find a **Closed** issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one.
+
+### Suggesting new features
+
+This section guides you through submitting an enhancement suggestion for Circles, including completely new features and minor improvements to existing functionality.
+
+Before suggesting a new feature on GitHub you can introduce your ideas first to the Circles community by writing a post in the [Circles forum](https://aboutcircles.com). You might receive helpful feedback before implementing your idea. After you've determined which repository your enhancement suggestion is related to, create an issue on that repository using the [feature template](https://github.com/CirclesUBI/.github/blob/master/.github/ISSUE_TEMPLATE/feature-suggestion.md).
 
 ### Your First Code Contribution
 
 Unsure where to begin contributing to Circles? You can start by looking through these `good-first-issue` or `help-wanted` issues:
 
-* [`good-first-issue`] - issues which should only require a few lines of code, and a test or two.
-* [`help-wanted`] - issues which should be a bit more involved than `good-first-issue` issues.
+* [`good-first-issue`] - issues which should only require a few lines of code, and a test or two
+* [`help-wanted`] - issues which should be a bit more involved than `good-first-issue` issues
 
 ## :sloth: Styleguide
 
