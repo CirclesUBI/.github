@@ -26,7 +26,7 @@ We have an **official board and chat** where the community helps you if you have
 If you are new to the Circles project and you need an overview of all components of the system and some development guidelines, **we recommend you to check out the following documents:**
 
 - The official [Circles Handbook](https://handbook.joincircles.net/) gives you an **introduction into the Circles system architecture**, tutorials to deploy your own Circles server but also how to write and run Circles code locally on your computer
-- The [Circles Whitepaper](https://handbook.joincircles.net/about/whitepaper.html) will give you a **good overview of how Circles actually works**
+- The [Circles Whitepaper](https://handbook.joincircles.net/docs/developers/whitepaper) will give you a **good overview of how Circles actually works**
 - Check out the [FAQ](https://joincircles.net/faq) on the Circles website
 
 ## :panda_face: How Can I Contribute?
