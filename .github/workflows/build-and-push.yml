@@ -5,14 +5,13 @@ on:
   workflow_call:
     inputs:
       image-name:
-        description: "The name of the image to build"
+        description: "Mandatory name of the image to build"
         required: true
         type: string
-  workflow_dispatch:
-    inputs:
-      image-name:
-        description: "The name of the image to build"
-        required: true
+      build-args:
+        description: "Optional build arguments"
+        default: ""
+        required: false
         type: string
 
 jobs:
@@ -94,5 +93,6 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: ${{ steps.meta.outputs.tags }}
-        labels: ${{ steps.meta.outputs.labels }}
+        tags: "${{ steps.meta.outputs.tags }}"
+        labels: "${{ steps.meta.outputs.labels }}"
+        build-args: "${{ inputs.build-args }}"
