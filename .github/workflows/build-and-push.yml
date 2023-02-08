@@ -1,17 +1,17 @@
 name: "Build and push"
-run-name: "Build ${{ inputs.image }} image from ${{ github.ref_name }} by @${{ github.actor }}"
+run-name: "Build ${{ inputs.image-name }} image from ${{ github.ref_name }} by @${{ github.actor }}"
 
 on:
   workflow_call:
     inputs:
-      image:
-        description: "The desired name of the image to build"
+      image-name:
+        description: "The name of the image to build"
         required: true
         type: string
   workflow_dispatch:
     inputs:
-      image:
-        description: "The desired name of the image to build"
+      image-name:
+        description: "The name of the image to build"
         required: true
         type: string
 
@@ -41,11 +41,11 @@ jobs:
       uses: docker/metadata-action@v4
       with:
         images: |
-          ${{ vars.GC_REGISTRY }}/${{ vars.GC_PROJECT_ID }}/${{ inputs.image }}
-          docker.io/${{ vars.DH_ORGANIZATION }}/${{ inputs.image }}
-          ghcr.io/${{ github.repository_owner }}/${{ inputs.image }}
+          ${{ vars.GC_REGISTRY }}/${{ vars.GC_PROJECT_ID }}/${{ inputs.image-name }}
+          docker.io/${{ vars.DH_ORGANIZATION }}/${{ inputs.image-name }}
+          ghcr.io/${{ github.repository_owner }}/${{ inputs.image-name }}
         labels: |
-          org.opencontainers.image.title=${{ inputs.image }}
+          org.opencontainers.image.title=${{ inputs.image-name }}
           org.opencontainers.image.vendor=CirclesUBI
         tags: |
           type=raw,value=latest,enable={{is_default_branch}}
