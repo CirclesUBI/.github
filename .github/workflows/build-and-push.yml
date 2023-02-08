@@ -25,6 +25,7 @@ jobs:
 
   build-and-push-image:
 
+    name: Build and push image
     runs-on: ubuntu-latest
     permissions:
       contents: read
