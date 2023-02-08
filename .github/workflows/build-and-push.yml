@@ -13,6 +13,11 @@ on:
         default: ""
         required: false
         type: string
+      image-tags:
+        description: "Optional image tags"
+        default: ""
+        required: false
+        type: string
 
 jobs:
 
@@ -54,6 +59,7 @@ jobs:
           {{ branch }}
           type=sha,prefix={{branch}}-
           {{ sha }}
+          ${{ inputs.image-tags }}
 
     -
       name: Authenticate to Google Cloud
