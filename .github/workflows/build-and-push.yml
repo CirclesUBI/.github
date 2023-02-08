@@ -10,12 +10,14 @@ on:
         type: string
       build-args:
         description: "Optional build arguments"
-        default: ""
         required: false
         type: string
       image-tags:
         description: "Optional image tags"
-        default: ""
+        required: false
+        type: string
+      context:
+        description: "Optional build context"
         required: false
         type: string
 
@@ -99,6 +101,7 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: "${{ steps.meta.outputs.tags }}"
-        labels: "${{ steps.meta.outputs.labels }}"
+        context: "${{ inputs.context }}"
         build-args: "${{ inputs.build-args }}"
+        labels: "${{ steps.meta.outputs.labels }}"
+        tags: "${{ steps.meta.outputs.tags }}"
