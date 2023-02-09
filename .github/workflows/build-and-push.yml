@@ -20,6 +20,11 @@ on:
         description: "Optional build context"
         required: false
         type: string
+      file:
+        description: "Path to a Dockerfile to build"
+        default: "Dockerfile"
+        required: false
+        type: string
 
 jobs:
 
