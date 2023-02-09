@@ -20,6 +20,11 @@ on:
         description: "Optional build context"
         required: false
         type: string
+      file:
+        description: "Path to a Dockerfile to build"
+        default: "Dockerfile"
+        required: false
+        type: string
 
 jobs:
 
@@ -102,7 +107,8 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        context: "${{ inputs.context }}"
+        context:    "${{ inputs.context }}"
+        file:       "${{ inputs.file }}"
         build-args: "${{ inputs.build-args }}"
-        labels: "${{ steps.meta.outputs.labels }}"
-        tags: "${{ steps.meta.outputs.tags }}"
+        labels:     "${{ steps.meta.outputs.labels }}"
+        tags:       "${{ steps.meta.outputs.tags }}"
