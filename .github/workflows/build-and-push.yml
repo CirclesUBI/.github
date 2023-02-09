@@ -1,5 +1,4 @@
 name: "Build and push"
-run-name: "Build ${{ inputs.image-name }} image from ${{ github.ref_name }} by @${{ github.actor }}"
 
 on:
   workflow_call:
@@ -28,7 +27,7 @@ on:
 
 jobs:
 
-  build-and-push-image:
+  build-and-push:
 
     name: Build and push image
     runs-on: ubuntu-latest
