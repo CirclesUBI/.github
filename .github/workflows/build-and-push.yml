@@ -3,27 +3,57 @@ name: "Build and push"
 on:
   workflow_call:
     inputs:
+
       image-name:
         description: "Mandatory name of the image to build"
         required: true
         type: string
+
       build-args:
-        description: "Optional build arguments"
+        description: "Optional build arguments, takes a YAML multiline string | with ENV=variables"
         required: false
         type: string
       image-tags:
-        description: "Optional image tags"
+        description: "Optional additional image tags, takes a YAML multiline string |"
         required: false
         type: string
       context:
-        description: "Optional build context"
+        description: "Optional build context, defaults to ./ in the checkout root"
         required: false
         type: string
       file:
-        description: "Path to a Dockerfile to build"
+        description: "Optional path to a Dockerfile to build, relative to the build context"
         default: "Dockerfile"
         required: false
         type: string
+
+      release:
+        description: "Optional toggle for disabling Google Container Registry"
+        default: true
+        required: false
+        type: boolean
+      archive:
+        description: "Optional toggle for disabling GitHub Container Registry"
+        default: true
+        required: false
+        type: boolean
+      publish:
+        description: "Optional toggle for disabling Docker Hub Registry"
+        default: true
+        required: false
+        type: boolean
+
+    outputs:
+      # https://github.com/docker/build-push-action#outputs
+      imageid:
+        description: "Image ID, String"
+        value: ${{ jobs.build-and-push.outputs.imageid }}
+      digest:
+        description: "Image digest, String"
+        value: ${{ jobs.build-and-push.outputs.digest }}
+      metadata:
+        description: "Build result metadata, JSON"
+        value: ${{ jobs.build-and-push.outputs.metadata }}
 
 jobs:
 
@@ -35,6 +65,11 @@ jobs:
       contents: read
       id-token: write
       packages: write
+
+    outputs:
+      imageid:  ${{ steps.build-push.outputs.imageid }}
+      digest:   ${{ steps.build-push.outputs.digest }}
+      metadata: ${{ steps.build-push.outputs.metadata }}
 
     steps:
 
@@ -85,9 +120,9 @@ jobs:
       uses: docker/metadata-action@v4
       with:
         images: |
-          ${{ vars.GC_REGISTRY }}/${{ vars.GC_PROJECT_ID }}/${{ inputs.image-name }}
-          docker.io/${{ vars.DH_ORGANIZATION }}/${{ inputs.image-name }}
-          ghcr.io/${{ github.repository_owner }}/${{ inputs.image-name }}
+          name=${{ vars.GC_REGISTRY }}/${{ vars.GC_PROJECT_ID }}/${{ inputs.image-name }},enable=${{ inputs.release }}
+          name=docker.io/${{ vars.DH_ORGANIZATION }}/${{ inputs.image-name }},enable=${{ inputs.publish }}
+          name=ghcr.io/${{ github.repository_owner }}/${{ inputs.image-name }},enable=${{ inputs.archive }}
         labels: |
           org.opencontainers.image.title=${{ inputs.image-name }}
           org.opencontainers.image.vendor=CirclesUBI
@@ -100,10 +135,15 @@ jobs:
           type=sha,prefix={{branch}}-
           {{ sha }}
           ${{ inputs.image-tags }}
+        build-args: |
+          BUILDTIME=${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.created'] }}
+          VERSION=${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.version'] }}
+          REVISION=${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.revision'] }}
 
     -
       name: Build and push Container image
       uses: docker/build-push-action@v3
+      id: build-push
       with:
         push: true
         context:    "${{ inputs.context }}"
