@@ -23,7 +23,6 @@ on:
         type: string
       file:
         description: "Optional path to a Dockerfile to build, relative to the build context"
-        default: "Dockerfile"
         required: false
         type: string
 
