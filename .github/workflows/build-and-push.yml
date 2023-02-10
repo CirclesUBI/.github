@@ -3,24 +3,26 @@ name: "Build and push"
 on:
   workflow_call:
     inputs:
+
       image-name:
         description: "Mandatory name of the image to build"
         required: true
         type: string
+
       build-args:
-        description: "Optional build arguments"
+        description: "Optional build arguments, takes a YAML multiline string | with ENV=variables"
         required: false
         type: string
       image-tags:
-        description: "Optional image tags"
+        description: "Optional additional image tags, takes a YAML multiline string |"
         required: false
         type: string
       context:
-        description: "Optional build context"
+        description: "Optional build context, defaults to ./ in the checkout root"
         required: false
         type: string
       file:
-        description: "Path to a Dockerfile to build"
+        description: "Optional path to a Dockerfile to build, relative to the build context"
         default: "Dockerfile"
         required: false
         type: string
