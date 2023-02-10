@@ -101,7 +101,7 @@ jobs:
     -
       name: Authenticate to Google Cloud
       uses: google-github-actions/auth@v1
-      if: inputs.cluster
+      if: inputs.release
       id: auth
       with:
         workload_identity_provider: "${{ vars.GC_WLI_PROVIDER }}"
@@ -111,7 +111,7 @@ jobs:
     -
       name: Login to Google Cloud Container Registry
       uses: docker/login-action@v2
-      if: inputs.cluster
+      if: inputs.release
       with:
         registry: "${{ vars.GC_REGISTRY }}"
         username: "oauth2accesstoken"
