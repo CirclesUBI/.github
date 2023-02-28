@@ -37,7 +37,7 @@ This code of conduct and its related procedures also applies to unacceptable beh
 
 ## Reporting
 
-If you are subject to or witness unacceptable behavior, or have any other concerns, please contact our moderator as soon as possible via email at **counsellor@bitspossessed.org** which is currently monitored by [@llunaCreixent](https://github.com/llunaCreixent) from the [bitspossessed](https://bitspossessed.org/) collective.
+If you are subject to or witness unacceptable behavior, or have any other concerns, please contact our moderator as soon as possible. You reach the counsellor via email **counsellor@bitspossessed.org**. This email account is accessible to all [members of the bitspossessed collective](https://github.com/orgs/CirclesUBI/teams/bitspossessed/members) but is only monitored by the counsellor, which is currently [@adzialocha](https://github.com/adzialocha) from the [bitspossessed](https://bitspossessed.org/) collective. If the topic is sensitive, please ask for a call in the email. Emails will be regularly deleted every 3 months.
 
 Moderators will follow [internal guidelines](https://geekfeminism.wikia.org/wiki/Conference_anti-harassment/Responding_to_reports) for enforcing our Code of Conduct. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. Moderators are obligated to maintain confidentiality with regard to the reporter of an incident.
 
