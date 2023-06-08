@@ -4,6 +4,12 @@ on:
   workflow_call:
     inputs:
 
+      ref:
+        description: "Reference for a git object to check out"
+        required: false
+        default: ${{ github.ref }}
+        type: String
+
       image-name:
         description: "Mandatory name of the image to build"
         required: true
@@ -75,6 +81,8 @@ jobs:
     -
       name: Checkout repository
       uses: actions/checkout@v3
+      with:
+        ref: ${{ inputs.ref }}
 
     -
       name: Docker meta
