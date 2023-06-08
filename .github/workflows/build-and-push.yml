@@ -89,6 +89,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v4
       with:
+        context: git
         images: |
           name=${{ vars.GC_REGISTRY }}/${{ vars.GC_PROJECT_ID }}/${{ inputs.image-name }},enable=${{ inputs.google }}
           name=docker.io/${{ vars.DH_ORGANIZATION }}/${{ inputs.image-name }},enable=${{ inputs.docker }}
