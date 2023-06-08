@@ -8,7 +8,7 @@ on:
         description: "Reference for a git object to check out"
         required: false
         default: ${{ github.ref }}
-        type: String
+        type: string
 
       image-name:
         description: "Mandatory name of the image to build"
