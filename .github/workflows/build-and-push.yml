@@ -65,7 +65,7 @@ jobs:
   build-and-push:
 
     name: Build and push image
-    runs-on: ubuntu-latest
+    runs-on: circles-ubuntu-8-32-300
     permissions:
       contents: read
       id-token: write
